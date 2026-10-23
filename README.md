@@ -1,6 +1,6 @@
 # Optiver Realized Volatility Lab
 
-An English-language learning repository for the [Optiver Realized Volatility
+A learning repository for the [Optiver Realized Volatility
 Prediction competition](https://www.kaggle.com/competitions/optiver-realized-volatility-prediction).
 Use order-book and trade observations from one 10-minute window to predict
 realized volatility in the **next** 10-minute window.

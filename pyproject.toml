@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optiver-volatility-lab"
+version = "0.1.0"
+description = "A learning pipeline for order-book features and realized-volatility prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3", "pandas>=2.1,<3", "pyarrow>=14,<24",
+  "scikit-learn>=1.3,<2", "lightgbm>=4.3,<5", "matplotlib>=3.7,<4"
+]
+
+[project.optional-dependencies]
+notebooks = ["jupyterlab>=4,<5", "ipykernel>=6,<8"]
+download = ["kaggle>=1.6,<3"]
+
+[project.scripts]
+optiver-lab = "optiver_volatility.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
